@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh org *)",
+      "Bash(gh api *)",
+      "Bash(curl -sL https://www.gnu.org/licenses/gpl-3.0.txt -o LICENSE)",
+      "Bash(git add *)",
+      "Bash(rm -rf \"/Users/david/Library/CloudStorage/GoogleDrive-dmpressl@ncsu.edu/My Drive/MBA 507/.git\")",
+      "Bash(git init *)",
+      "Bash(git remote *)"
+    ]
+  }
+}
