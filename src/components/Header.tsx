@@ -12,10 +12,7 @@ export function Header({ totalLeaves, onExpandAll, onCollapseAll }: Props) {
         <div className="badge active">MBA 507</div>
       </div>
       <div className="header-controls">
-        <span className="leaf-count">
-          <strong>{totalLeaves}</strong> tests · 5 topics · LINE assumptions baked in
-        </span>
-        <button className="btn ghost" onClick={onExpandAll}>
+<button className="btn ghost" onClick={onExpandAll}>
           Expand all
         </button>
         <button className="btn ghost" onClick={onCollapseAll}>
