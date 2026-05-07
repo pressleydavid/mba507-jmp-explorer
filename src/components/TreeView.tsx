@@ -19,7 +19,7 @@ export function TreeView({
   return (
     <div className="tree-wrap">
       <div className="root-card">
-        <div className="root-title">MBA 507 Statistical Method Decision Tree</div>
+        <div className="root-title">MBA 507 Statistical Method Explorer</div>
         <div className="root-sub">{root.subtitle}</div>
         <div className="root-desc">{root.description}</div>
       </div>
