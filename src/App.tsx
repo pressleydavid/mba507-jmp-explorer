@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { tree, type TreeNode } from "./data/topics";
 import { TreeView } from "./components/TreeView";
 import { ClickpathPopup } from "./components/ClickpathPopup";
@@ -14,8 +14,6 @@ export default function App() {
   const [expanded, setExpanded] = useState<Set<string>>(
     () => new Set(tree.children?.map((c) => c.id) ?? []),
   );
-
-  const totalLeaves = useMemo(() => countLeaves(tree), []);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -81,11 +79,6 @@ export default function App() {
       </footer>
     </div>
   );
-}
-
-function countLeaves(n: TreeNode): number {
-  if (!n.children?.length) return n.kind === "leaf" ? 1 : 0;
-  return n.children.reduce((acc, c) => acc + countLeaves(c), 0);
 }
 
 function walk(n: TreeNode, cb: (n: TreeNode) => void) {
