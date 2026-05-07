@@ -127,7 +127,7 @@ export const tree: TreeNode = {
   title: "MBA 507",
   subtitle: "Data-Driven Managerial Decisions 2: JMP decision tree",
   description:
-    "Pick a topic, then a concept, then a test. Each leaf shows the exact JMP 19.1.0 clickpath, the assumption being checked, a worked example using a dataset from your /MBA 507 folder, and a managerial interpretation prompt.",
+    "Pick a topic, then a concept, then a test. Each leaf shows the exact JMP 19.1.0 clickpath, the assumption being checked, a worked example using a dataset from the course materials, and a managerial interpretation prompt.",
   children: [
     // ──────────────────────────────────────────── TOPIC 1 ───────────────────────
     {
