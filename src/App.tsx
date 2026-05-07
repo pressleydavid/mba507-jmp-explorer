@@ -49,7 +49,6 @@ export default function App() {
   return (
     <div className="app-shell">
       <Header
-        totalLeaves={totalLeaves}
         onExpandAll={expandAll}
         onCollapseAll={collapseAll}
       />

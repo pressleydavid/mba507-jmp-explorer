@@ -1,10 +1,9 @@
 interface Props {
-  totalLeaves: number;
   onExpandAll: () => void;
   onCollapseAll: () => void;
 }
 
-export function Header({ totalLeaves, onExpandAll, onCollapseAll }: Props) {
+export function Header({ onExpandAll, onCollapseAll }: Props) {
   return (
     <header className="header">
       <div className="header-title">
